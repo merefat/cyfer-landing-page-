@@ -27,7 +27,7 @@ export function Hero() {
       <div className="dark:block hidden absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] bg-gradient-to-b from-[#1fbbd2]/12 via-[#f39c12]/5 to-transparent blur-[140px] pointer-events-none rounded-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-6 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-6 items-center">
           {/* Left: Headlines, Value Prop, CTAs */}
           <div className="lg:col-span-5 text-center lg:text-left space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 dark:bg-white/[0.05] border border-slate-200 dark:border-white/[0.1] text-slate-700 dark:text-slate-200 text-xs font-semibold shadow-sm">

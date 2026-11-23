@@ -193,7 +193,7 @@ docker compose up -d`;
               <Hint word="root" tip="The administrator account on a Linux server. Commands just work." />.
             </P>
             <SubHead>Before you start, you need</SubHead>
-            <div className="mt-3 grid sm:grid-cols-3 gap-2.5">
+            <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-2.5">
               {[
                 ["A Linux server", "Or ~$5/month to rent one — next step."],
                 ["A domain name", "Or ~$10/year to buy one — step 4."],
@@ -681,7 +681,7 @@ npm run start`}
   return (
     <div>
       {/* global inputs */}
-      <div className="grid sm:grid-cols-2 gap-3 mb-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-2">
         <label className="block">
           <span className="text-[11px] font-bold tracking-wide text-[#17283b]/80 dark:text-white/70">
             YOUR DOMAIN <span className="font-semibold">(the address you chose or bought)</span>

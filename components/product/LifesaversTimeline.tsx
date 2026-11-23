@@ -120,7 +120,7 @@ export function LifesaversTimeline() {
                       }`}
                     />
 
-                    <div className="grid md:grid-cols-2 md:gap-24 items-center">
+                    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-24 items-center">
                       {/* icon bubble — always first on mobile */}
                       <motion.div
                         initial={{ scale: 0.8, opacity: 0 }}

@@ -178,7 +178,7 @@ export default function ProductVaultPage() {
       {/* 1. Vault hero — split layout with live-feel vault window */}
       <section className="relative pt-28 pb-12 sm:pt-32 sm:pb-16 lg:pb-20 bg-white dark:bg-[#111e2d] overflow-hidden transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Copy + benefit grid */}
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#1fbbd2]/15 border border-[#1fbbd2]/30 text-[#0d8294] dark:text-[#1fbbd2] text-xs font-semibold uppercase tracking-wider mb-5">
@@ -195,7 +195,7 @@ export default function ProductVaultPage() {
               </p>
 
               {/* Quick benefits — 2x2 grid */}
-              <div className="mt-8 grid sm:grid-cols-2 gap-3 text-left">
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
                 {BENEFITS.map(({ icon: Icon, title, sub }) => (
                   <div
                     key={title}

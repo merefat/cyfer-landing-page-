@@ -139,7 +139,7 @@ export function ZeroKnowledgeFlow() {
       </div>
 
       {/* Honesty split — what we hold vs. what we never see */}
-      <div className="mt-6 grid md:grid-cols-2 gap-4">
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* What our servers hold */}
         <div className="relative overflow-hidden rounded-2xl bg-[#0a1526] border border-[#1fbbd2]/25 p-5 sm:p-6">
           <div
@@ -277,7 +277,7 @@ export function SixLayersProtectionGrid() {
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {layers.map((item, i) => {
           const Icon = item.icon;
           const cyan = i % 2 === 0;

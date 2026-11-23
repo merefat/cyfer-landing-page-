@@ -51,7 +51,7 @@ export function ElevenItemTypes({
                   className="absolute left-0 top-0 h-full w-[3px] bg-gradient-to-b from-[#1fbbd2] via-[#1fbbd2] to-[#f39c12]"
                 />
 
-                <div className="relative grid gap-6 px-6 py-7 sm:px-9 sm:py-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,320px)] lg:items-end lg:gap-10">
+                <div className="relative grid grid-cols-1 gap-6 px-6 py-7 sm:px-9 sm:py-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,320px)] lg:items-end lg:gap-10">
                   <div>
                     <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.08] border border-[#1fbbd2]/40 text-white text-xs font-semibold shadow-sm mb-4">
                       <Star className="w-3.5 h-3.5 text-[#f39c12] fill-[#f39c12]" />

@@ -18,7 +18,7 @@ export function HomeHighlightsSection() {
             <div className="absolute -bottom-24 -right-20 w-80 h-80 rounded-full bg-[#f39c12]/15 blur-3xl" />
           </div>
 
-          <div className="relative z-10 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center px-6 sm:px-10 lg:px-14 py-10 sm:py-14">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center px-6 sm:px-10 lg:px-14 py-10 sm:py-14">
             {/* CTA copy */}
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-1.5 rounded-full border border-[#1fbbd2]/35 bg-[#0c1f33] px-3.5 py-1.5 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-[#6fd8ec]">
