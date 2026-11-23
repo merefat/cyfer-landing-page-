@@ -734,9 +734,9 @@ npm run start`}
         this page.
       </p>
 
-      <div className="grid lg:grid-cols-[210px_1fr] gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-[210px_minmax(0,1fr)] gap-6">
         {/* rail */}
-        <nav aria-label="Install steps" className="lg:sticky lg:top-24 self-start">
+        <nav aria-label="Install steps" className="lg:sticky lg:top-24 self-start min-w-0">
           <div className="hidden lg:block mb-4">
             <div className="h-1.5 rounded-full bg-[#17283b]/[0.12] dark:bg-white/[0.12] overflow-hidden">
               <div
@@ -784,7 +784,7 @@ npm run start`}
         </nav>
 
         {/* panel */}
-        <div>
+        <div className="min-w-0">
           <div
             id="install-step-panel"
             aria-live="polite"

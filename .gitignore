@@ -18,3 +18,4 @@ next-env.d.ts
 
 # Windows reserved-name hazard (see AGENTS.md)
 nul
+.vercel
