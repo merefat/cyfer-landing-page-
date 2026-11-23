@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# next.js build output (distDir lives outside the project on Windows,
+# but ignore .next anyway for safety)
+.next/
+out/
+build/
+
+# misc
+.DS_Store
+*.log
+*.tsbuildinfo
+next-env.d.ts
+
+# env
+.env*
+
+# Windows reserved-name hazard (see AGENTS.md)
+nul

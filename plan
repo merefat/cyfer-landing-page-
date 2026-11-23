@@ -1,0 +1,304 @@
+# Cyfer Website: Full Plan (v3)
+
+**Version 3 · 10 November 2026**  
+*Built from the Cyfer app screenshots, your answers on pricing, trust and fonts, and the earlier plan structure.*
+
+---
+
+## 0. What changed in v3
+• **Every claim is tied to a real screen.** All copy now traces back to something visible in the app, not only to the written docs.  
+• **Item types are final: 11.** Ten appear in the New item picker (Login, Secure note, Card, Identity, Env / secrets, API key, SSH key, Database, Wi-Fi, Project), plus Passkey.  
+• **Cyfer is not open source.** All “open source” language is removed and replaced by a proof-based trust page.  
+• **Pricing placeholders added** for the hosted plan after the trial and for Enterprise. They are labelled as placeholders everywhere.  
+• **Page-by-page comparison** with Passbolt, Bitwarden and LastPass (section 3).  
+• **Layout, interactive and video concepts** for every page, not only Home.  
+• **Keep and cut list** per page (section 14).  
+• **New: app fixes needed** before screenshots are captured (section 13).  
+• **Fonts settled:** Sora for headings and UI, JetBrains Mono for code.  
+*Note: the v2 doc could not be opened from this chat, so v3 is rebuilt from the conversation and screenshots rather than edited line by line. If v2 had something that is missing here, tell me and I will add it.*
+
+---
+
+## 1. Positioning
+* **One line:** The vault for people who ship. Logins, API keys, env files and servers in one place, with health checks, rotation and an assistant that never sees your secrets.
+* **Primary audience:** developers and small technical teams. Five of the 11 item types (Env / secrets, API key, SSH key, Database, Project) are developer types, and none of the three competitors leads with them.
+* **Secondary audiences:** IT and ops leads who need shared folders and an audit trail; individuals who want a private, no-nonsense vault.
+
+### What makes Cyfer different (each one backed by a screen):
+1. **Built for developer secrets.** Env files, API keys, SSH keys, database credentials and whole projects (Supabase, Firebase, Neon) are first-class items.
+2. **Health that judges by exposure.** Internet-facing logins are judged strictly; local-network logins are listed separately so a weak router password does not bury a weak AWS one.
+3. **Rotation.** Secrets show when they last changed and when they change next. DockBit secrets rotate on their own and the new value is saved back.
+4. **Connected apps.** An app asks for a secret by name and reads only what you give it. The value is encrypted between your browser and the app, and every read is logged.
+5. **Sage.** An assistant that works from metadata only. Anything that needs your keys happens on your device when you confirm.
+6. **Plain honesty.** No recovery without your keys, and the app says so.
+
+* **Tone:** plain, specific, calm. The app already writes this way (“Nothing needs attention”). The site should sound like the product.
+* **Tagline options:**
+  • “The vault for people who ship.”  
+  • “Every secret, one calm place.”  
+  • “Passwords for people. Secrets for code.”
+
+---
+
+## 2. What the app does (the source of truth for copy)
+
+| Area | What the screenshots show | Website use |
+| :--- | :--- | :--- |
+| **Vault** | Search by name, URL, username or IP; filters Internet, Local network, Needs attention, On a rotation schedule; sort by name, category, topic | Hero demo, Product page |
+| **Smart filters** | Weak passwords, Reused passwords, Rotation due, across all folders | Health page |
+| **Topics** | Auto-assigned (Banking & finance, Developer & hosting, Smart home & devices) | Small “it sorts itself” moment |
+| **Folders** | Private folders “only you”; Sort my vault button | Product page |
+| **Item types** | 10 in the picker plus Passkey. Each has its own form | 11 types section |
+| **Health** | Four counters, breach check, five lists (Internet, Local network, Saved long ago, No 2FA) | Health page, Home |
+| **Rotation** | DockBit panel, Coming up, Recent rotations | Rotation page, Home |
+| **Sage** | Metadata only, built-in requests, Tidy up, optional model key | Sage page, Home |
+| **Connected apps** | Waiting for you, What you have given, connect code, key fingerprint | Connected apps page |
+| **Members & teams** | Organisation, teams (Ops, Support, Finance), shared folders | Teams page |
+| **Sharing** | One item, one person, encrypted to their device | Teams page |
+| **Import & tools** | Import (.csv, .json, .1pux, .kdbx), Export, Generator, Breach check, Duplicates | Get started, Product |
+| **Settings** | Account, Security, Personal & work, Licence, Browser extension, Integrations, Apps & approvals, Sage, Activity | Security page |
+| **Getting started** | Five steps: recovery key, passkey, browser extension, phone app, import | Get started page |
+
+---
+
+## 3. Page-by-page comparison
+
+*These are typical patterns from the earlier review of the three sites. Re-check each live page before copying any structure.*
+
+| Page | Passbolt | Bitwarden | LastPass | Cyfer move |
+| :--- | :--- | :--- | :--- | :--- |
+| **Hero** | Security-first message for teams, self-hosting, open source | Broad reach message, open source, fast download | Consumer benefit, “never forget a password” | Real product with demo data in the first screen; lead with developer secrets |
+| **Product** | Feature list organised around team use | Long pages per platform | Features tied to plan tiers | One page per capability, each with a real screen |
+| **Security** | Heavy: open source, audits, architecture docs | Heavy: open source, audits, whitepaper | Certifications and incident history shape the page | Only what we can prove, a whitepaper, no badges we cannot back |
+| **Pricing** | Edition-based tiers | Free tier plus low-cost tiers, clear table | Free, Premium, Families, Business | Few tiers, one table, trial terms stated plainly |
+| **Teams & Enterprise** | Admin controls, self-hosting, API | SSO, directory sync, policies | Admin console, SSO | Shared folders and connected-app audit trail; Enterprise by contact |
+| **Solutions** | Use cases for IT and dev teams | By role and industry | By team size | By role: developer, small team, IT and ops, individual |
+| **Compare** | Little | Comparison content exists | Comparison content exists | Honest pages against each, including where they win |
+| **Get started** | Install docs | Download hub for every platform | Download buttons | Three steps that mirror the in-app checklist |
+
+* **Where Cyfer can honestly win:** developer item types, exposure-aware Health, rotation, connected-app approvals, a metadata-only assistant.  
+* **Where it cannot claim a win yet:** open source (it is not), independent audits (none confirmed), ecosystem size, free tier (not defined).
+
+---
+
+## 4. Site map and navigation
+
+* **Top bar:** Product (mega menu) · Security · Pricing · Teams & Enterprise · Solutions · Compare · Sign in · Start free trial  
+* **Mega menu:** two columns on the left (Vault and 11 item types, Health, Rotation, Sage, Connected apps, Import), and on the right a phone mockup that changes screen as you hover each link. On mobile the phone preview is hidden and the list stacks.
+
+| Page | URL | Purpose |
+| :--- | :--- | :--- |
+| **Home** | `/` | Explain and convert |
+| **Product pages (6)** | `/product/…` | One capability each |
+| **Security** | `/security` | Build trust with proof |
+| **Pricing** | `/pricing` | Make the choice easy |
+| **Teams & Enterprise** | `/teams` | Convert groups |
+| **Solutions (4)** | `/solutions/…` | Role-based entry points |
+| **Compare (3)** | `/compare/…` | Capture comparison searches |
+| **Get started** | `/start` | Reduce first-day drop-off |
+
+* **Footer:** product links, security, status, privacy, terms, contact, a short “not open source, here is what you can verify” line.
+
+---
+
+## 5. Home page, section by section
+
+| # | Section | Layout | Interactive | Video or motion |
+| :--- | :--- | :--- | :--- | :--- |
+| **1** | **Hero** | Headline and subhead on the left, two buttons; right side shows the real app in a browser frame with a phone overlapping | Click an item type in the frame to swap the form (Login, API key, SSH key) | 12-second silent loop: New item picker, API key form, saved |
+| **2** | **Proof strip** | Four short facts, no logos | None | Count-up on scroll |
+| **3** | **Eleven item types** | Grid of 11 cards with the app’s own icons | Hover a card to see the real form fields; filter Personal or Developer | None |
+| **4** | **Health** | Left text, right a mini Health panel | Toggle Internet or Local network to show how findings are judged | None |
+| **5** | **Rotation** | Horizontal timeline | Click a step: ages, scheduled, rotates through DockBit, saved back | 20-second explainer |
+| **6** | **Connected apps** | Three-step strip | Walk through: app asks for DATABASE_URL, approval card, log line | Short demo clip |
+| **7** | **Sage** | Chat box with three canned prompts | Click “what needs attention”, “rotation status”, “app requests” (the app’s real built-in requests) | Typing animation |
+| **8** | **Teams** | Organisation to teams to shared folders diagram | Click Ops, Support or Finance to see folders | None |
+| **9** | **Security promise** | Three columns plus link | None | None |
+| **10** | **Compare mini** | Compact table, four columns | Hover a row for detail | None |
+| **11** | **Pricing teaser** | Three cards, placeholder prices | Monthly or yearly toggle | None |
+| **12** | **Final call to action** | Import from your old manager (CSV, JSON, 1PUX, KDBX) | Pick your old app to see export steps | None |
+
+* **Video set (three):** 12-second hero loop; 60-second “ship a secret” walkthrough; 45-second security explainer. All silent-first with captions.
+
+---
+
+## 6. Product pages
+
+Each page: headline, one large real screen, three short benefits, one interactive piece, one proof line, one call to action.
+1. **Vault and 11 item types.** Interactive: pick an item type, see its form. Proof: the actual field lists (for example Project holds provider, project ID, anon key, service role key, JWT secret, database password).
+2. **Health.** Interactive: the Internet versus Local network toggle. Explain the four counters, the breach check (only the first 5 characters of each password’s SHA-1 hash leave the device) and the list of private-range addresses it treats as local (10.x, 172.16-31.x, 192.168.x, 100.64.x for Tailscale, localhost, .local, .lan).
+3. **Rotation.** Interactive: the timeline. Be clear that automatic rotation applies to DockBit secrets; other items are marked due so you change them.
+4. **Sage.** Interactive: canned prompts. State plainly that free-form answers need your own model key, and that Sage sees metadata only.
+5. **Connected apps.** Interactive: the approval flow. Proof: every read is logged; apps read only what you give them.
+6. **Import and tools.** Interactive: choose your old app, see export steps. Mention what cannot move: passkeys need a separate exchange format.
+
+---
+
+## 7. Security page
+
+Goal: say only what can be proven, and say it clearly.
+
+| Claim | Source in the app | Publish? |
+| :--- | :--- | :--- |
+| Items are encrypted in your browser before anything is sent | Import page copy | Yes |
+| Cyfer’s server never sees a value read by a connected app | Connected apps copy | Yes, scoped to connected apps |
+| Every app read is logged | Connected apps copy | Yes |
+| Breach check sends only 5 characters of a hash | Health and Tools copy | Yes |
+| No recovery without your keys | Delete account copy | Yes, as an honesty point |
+| Sage sees metadata only | Sage page | Yes |
+| Website icons load from your browser, not Cyfer’s server | Settings copy | Yes |
+| Auto-lock and a per-device unlock key | Settings copy | Yes |
+| Passkey sign-in | Getting started | Yes, once confirmed |
+| Independent audit, pen test, SOC 2, ISO | None | No until a report exists |
+| Reproducible builds | None | No until you confirm what self-hosters receive |
+| Open source | Not true | No |
+
+* **Layout:** short promise at the top, the table above rewritten as plain cards, an architecture diagram, a “what we cannot see” panel, a “what happens if you lose your keys” panel, and a downloadable whitepaper (needs your technical details).
+* **Interactive:** a diagram where you click “your browser”, “Cyfer server”, “connected app” to see what each can read.
+* **Video:** 45-second explainer of the encryption path.
+
+---
+
+## 8. Pricing page (placeholders)
+
+*All numbers below are placeholders for layout only. Replace them before launch.*
+
+| Plan | Trial | Personal (hosted) | Teams | Enterprise |
+| :--- | :--- | :--- | :--- | :--- |
+| **Price** | Free for [14] days | [$3] per month, [$30] yearly | [$6] per user per month | Contact us |
+| **Item types** | All 11 | All 11 | All 11 | All 11 |
+| **Health and breach check** | Yes | Yes | Yes | Yes |
+| **Rotation (DockBit)** | Yes | Yes | Yes | Yes |
+| **Connected apps** | Yes | Yes | Yes | Yes |
+| **Shared folders and teams**| Limited | No | Yes | Yes |
+| **Sage built-in requests** | Yes | Yes | Yes | Yes |
+| **Sage free-form (own model key)** | Yes | Yes | Yes | Yes |
+| **Support** | Email | Email | Priority email | Dedicated [to confirm] |
+| **SSO, directory sync** | No | No | No | [To confirm] |
+
+* **Layout:** monthly or yearly toggle, four columns, a plain FAQ (what happens after the trial, can I export, what if I forget my keys, what is a model key).
+* **Interactive:** a small calculator for team size.
+* **Video:** none.
+
+---
+
+## 9. Teams and Enterprise page
+
+• **Story:** create an organisation, put people in teams (Ops, Support, Finance), give each team the shared folders it needs, keep your private vault private.  
+• **Layout:** hero with the Members & teams screen, a three-step strip, a connected-app audit section, an Enterprise block with a contact form.  
+• **Interactive:** the organisation diagram; click a team to see which folders it gets.  
+• **Honest note:** single-item sharing is encrypted to the recipient’s device and needs a Cyfer account; for groups, use shared folders.  
+• **Enterprise (to confirm):** SSO, directory sync, audit log export, support terms.
+
+---
+
+## 10. Solutions, Compare, Get started
+
+* **Solutions (four pages):** Developers, Small teams, IT and ops, Individuals. Each uses the same template: problem, the three Cyfer features that matter, one real screen, one customer-style scenario (clearly labelled “example”).
+* **Compare (three pages):** Cyfer vs Passbolt, vs Bitwarden, vs LastPass. Same table every time, including a “where they are stronger” row. Do not claim anything about a competitor that is not on their current public pages.
+* **Get started (`/start`):** three steps that mirror the in-app checklist.
+  1. Create your account and save your recovery key.
+  2. Add the browser extension and phone app, or add a passkey.
+  3. Import from your old manager (CSV, JSON, 1PUX, KDBX) or add your first item.
+* **Interactive:** pick your old password manager and see its export steps.  
+* **Video:** 60-second walkthrough.
+
+---
+
+## 11. Demo data for screenshots
+
+A fictional workspace, Northwind Studio. Use reserved domains (example.com) and obviously fake keys. Never use real credentials.
+
+| Item | Type | Why it is there |
+| :--- | :--- | :--- |
+| **GitHub** | Login with 2FA | Shows the live 6-digit code |
+| **AWS console** | Login, internet, no 2FA | Appears in “Internet, fix first” |
+| **Office router** | Login, local network, weak | Appears in “Local network, low risk” |
+| **Stripe live key** | API key | Rotation due |
+| **Production .env** | Env / secrets | Variables list |
+| **Staging .env** | Env / secrets | Second environment |
+| **Orbit app** | Project (Supabase) | Keys and URL together |
+| **Postgres primary** | Database | DockBit rotation every 30 days |
+| **Bastion deploy key** | SSH key | Private and public key |
+| **Company card** | Card | Banking & finance topic |
+| **Passport** | Identity | Licence / ID field hidden |
+| **Studio Wi-Fi** | Wi-Fi | Smart home & devices topic |
+| **Recovery notes** | Secure note | Plain note |
+| **Google** | Passkey | Passkey row |
+
+* **Health numbers to show:** Internet fix first: 3 · Local network: 2 · Unchanged for 2+ years: 4 · Internet logins without 2FA: 5. One reused-password pair and one breached password for the breach check demo.  
+* **Connected apps demo:** one app waiting (“build-agent” asking for DATABASE_URL), one connected app with a read log.
+
+---
+
+## 12. Mobile mockups and design system
+
+Eight phone screens (mockups until real screenshots arrive): Unlock with Face ID · All items · Login detail with live 2FA code · 2FA codes · Health · Rotation · Sage · Approval request from a connected app.
+
+* **Fonts:** Sora for headings, body and UI. JetBrains Mono for code blocks, keys, fingerprints and .env snippets (Sora has no monospace). Self-host both so the site makes no third-party font requests, which matches the privacy promise.
+* **Look and feel (taken from the app):** dark navy sidebar, cyan accent, soft grey-blue canvas, rounded cards, small status pills (amber for attention, green for OK, red for danger). Reuse the app’s icons so the site and product feel like one thing.
+* **Build:** the app appears to run on Next.js, so build the site the same way and share design tokens (colours, spacing, radius) with the app.
+
+---
+
+## 13. App fixes before capturing screenshots
+
+1. Verify the demo account’s email so the amber “Verify your email” pill is gone.
+2. Use a demo account so no personal email shows in the sidebar.
+3. Capture without the operating system taskbar (two current screenshots show it).
+4. Capture from a production build so the small dev badge in the bottom-left corner is gone.
+5. Smart filter pages (Reused passwords, Rotation due) show “Your vault is empty”. They should say there is nothing to fix, for example “No reused passwords”. This is a copy fix in the app.
+6. The “Install the browser extension” row shows both “Done” and “Get the extension”. Confirm that is intended.
+7. Capture at 2x resolution, same width, same sidebar scroll position, one theme.
+
+---
+
+## 14. Keep and cut, page by page
+
+| Page | Keep | Cut |
+| :--- | :--- | :--- |
+| **Home** | Real product frame, 11 types, Health toggle, connected-app demo | Stock photos, fake logos, fake testimonials, “trusted by millions” |
+| **Product** | One screen per capability | Long feature lists, plan-tier badges |
+| **Security** | Provable claims, whitepaper, no-recovery honesty | Certification badges, “military-grade”, “open source” |
+| **Pricing** | Four columns, FAQ, team calculator | Hidden fees, vague “custom” on Teams |
+| **Teams & Enterprise** | Org diagram, audit trail | Buzzword grids |
+| **Solutions** | Four role pages | Industry pages (no proof yet) |
+| **Compare** | Honest tables | Attack language |
+| **Get started** | Three steps | Long onboarding text |
+
+---
+
+## 15. Roadmap (estimates) & Additional Foundations (Version 2 Context)
+
+### Locked-in Decisions
+* **Typeface:** Sora only, including code and ciphertext (tabular figures, +0.01em tracking inside tinted panel).
+* **Colours:** `#17283b` navy base, `#f39c12` amber action, `#1fbbd2` cyan trust & security.
+* **Open source:** No. The site never claims it, and the Compare pages say so plainly.
+* **Item types:** 11 total. 10 created with a form, plus Passkey.
+* **Copy:** Australian English, matching the app (“Favourite”, “Licence”, “Organisation”, “Postcode”).
+
+### Six Core Pillars
+1. People and machines in one vault.
+2. The server holds ciphertext only; keys are derived in your browser.
+3. Sage, an assistant that works on masked values, never your secrets.
+4. Share with anyone: the key stays in the link’s #fragment.
+5. Servers authenticate with signed requests, not long-lived tokens.
+6. A free self-hosted personal vault, and your data stays readable if a hosted trial ends.
+
+### Interactives Specification (I1 to I12)
+* **I1 (Human or Machine toggle):** Home hero segmented switch morphing between login autofill and .env CLI push.
+* **I2 (What you see, what the server sees):** Web Crypto client-side derivation & AES-256-GCM encryption sandbox.
+* **I3 (Item-type flip cards):** 11 cards flipping on hover/tap to show actual form fields.
+* **I4 (Paste and fill):** Paste a .env or Supabase key block, click "Fill from this" to auto-populate Project form.
+* **I5 (Automatic topic):** Type a site or item name to dynamically auto-assign topics (Developer & hosting, Banking & finance, Smart home).
+* **I6 (Sage masking):** Scripted 3-step demo: messy paste $\to$ `{{v1}}`, `{{u1}}` placeholders $\to$ structured item card.
+* **I7 (Share-link anatomy):** Highlights `#fragment` in `https://example.test/s/ab12cd#key` (never leaves browser).
+* **I8 (Server request stepper):** 5-step flow: server generates keys $\to$ signed request $\to$ admin approval card $\to$ wrapped item key $\to$ memory decryption.
+* **I9 (Sort my vault slider):** Before/after slider showing vault deduplication and categorization.
+* **I10 (Policy selector):** Level 0 to 3 security policy selector with grace period slider.
+* **I11 (Key hierarchy explorer):** Interactive SVG tree from Master Password $\to$ Argon2id $\to$ HKDF $\to$ authKey/encKey $\to$ per-item AES keys.
+* **I12 (Password generator):** Client-side CSPRNG generator with Diceware passphrase mode and entropy bits calculation.
+
+### Demo Data Pack (Northwind Labs)
+* Fictional organization: **Northwind Labs** (Teams: Backend, DevOps, Finance).
+* Items: GitHub (2FA), AWS console, Office router, Stripe live key, Production .env, Staging .env, Orbit app (Supabase), Postgres primary, Bastion deploy key, Company card, Passport, Studio Wi-Fi, Recovery notes, Google passkey.
